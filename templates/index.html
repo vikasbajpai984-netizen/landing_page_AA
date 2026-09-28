@@ -1,0 +1,403 @@
+<html>
+   <head> 
+        <title>AutoAttend | AI powered attendance system</title>
+        <link rel = "stylesheet" href = "{{url_for('static', filename = 'css/styles.css')}}">
+        <link rel = "icon"  type = "image/png" href = "{{url_for('static', filename = 'img/logo.png')}}">
+   </head>
+
+   <body>
+        <nav class = 'navbar'>
+
+            <div class = "logo">
+                <img src="{{url_for('static', filename = 'img/logo.png')}}" style = "height : 32" alt = "AutoAttend Logo">
+                <div class = "logo-text">AutoAttend</div>
+            </div>  
+
+            <div class = "nav-links">   
+                <a href ="#">Home</a> 
+                <a href ="#features">Features</a> 
+                <a href ="#journey">Journey</a> 
+                <a href ="#tech">Tech Stack</a> 
+            </div>
+
+            <div class = "nav-cta"> 
+                <a href = "https://autoattend-main.streamlit.app/" class="btn-pill">
+                    Start AI Attendance
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"></path></svg>
+                </a>
+            </div>
+            
+        </nav>
+
+        <header class = "hero">
+            <div  class = "badge">
+                Welcome To AutoAttend
+            </div>
+            <div >
+               <h1>AI Powered <br> Attendance <span> System</span></h1>
+               <p >One snap Instant attendance.<br> AutoAttend uses facial recognition to mark your entire class in seconds — no rollno calls, no paperwork.</p>
+            </div>
+            <div class = "hero-actions">
+                <a href = "https://autoattend-main.streamlit.app/" class="btn-cta">
+                    Start AI Attendance
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"></path></svg>
+                </a>
+                <a href = "journey" class = "link-action">Explore Journey</a>
+            </div>
+            <div class = "floating-card card-left">
+                <div class ="card-img">
+                    <img src = "{{url_for('static', filename = 'img/demo/home.png')}}"alt = "landing img 1">
+                </div>  
+            </div>
+             <div class = "floating-card card-right">
+                <div class ="card-img">
+                    <img src = "{{url_for('static', filename = 'img/demo/f1.png')}}"alt = "landing img 2">
+                </div>  
+            </div>
+        </header>
+        <section id = "features", class="features">
+
+        <!-- Main Heading -->
+        <h1>Innovative Features</h1>
+
+        <!-- Features Container -->
+        <div class="features-grid">
+
+            <!-- Feature 1 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📸
+                </div>
+
+                <h2>AI  Face  Analysis</h2>
+
+                <p>
+                    Advanced neural networks recognize
+                    every student's face from a single class
+                    photo, making attendance instant and
+                    accurate.
+                </p>
+
+            </div>
+
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🎙️
+                </div>
+
+                <h2>
+                    Sequential Voice ID
+                </h2>
+
+                <p>
+                    Students say "Present" one-by-one, and
+                    our audio-AI analyzes their voice
+                    biometrics against stored embeddings in
+                    real-time.
+                </p>
+
+            </div>
+
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📱
+                </div>
+
+                <h2>
+                    QR - Driven Roster
+                </h2>
+
+                
+                <p>
+                    Course codes generate unique QR codes
+                    for instant student enrollment.
+                    No moremannual entry or data management 
+                    headaches.
+                </p>
+
+            </div>
+
+        </div>
+
+        <section id = "journey" class="teacher-flow" >
+        <div class = "flow-container">
+            <div class = "section-tag"  style = "text-align : center; font-size:30px; font-weight:900; margin-bottom: 40px; display: block;">
+                --Work Flow--
+            </div>
+            <h2 style = "text-align : center; font-size:50px; margin-bottom: 80px;"><u>The Teacher's Journey</u></h2>
+            <div class = "flow-step">
+                <div class = "flow-content">
+                <div class = "step-badge"><u>Step-01</u></div>
+                <h3>Secure Login</h3>
+                <p> Start your session with our high-security authentication portal.Your data is encrypted and synced across all ypur devices.</p>
+                </div>
+                <div class = "flow-image">
+                    <img src ="{{url_for('static', filename = 'img/demo/flow-1.png')}}" alt = "flow image">
+                </div>
+            </div>
+             <div class = "flow-step">
+                <div class = "flow-content">
+                <div class = "step-badge"><u>Step-02</u></div>
+                <h3>Interactive Dashboard</h3>
+                <p>Manage all your subjects, attendance logs and student rosters from a single ,beautiful unified stream </p>
+                </div>
+                <div class = "flow-image">
+                    <img src ="{{url_for('static', filename = 'img/demo/flow-2.png')}}" alt = "flow image">
+                </div>
+            </div>
+             <div class = "flow-step">
+                <div class = "flow-content">
+                <div class = "step-badge"><u>Step-03</u></div>
+                <h3>Course Management</h3>
+                <p>Creating a new subject is a breeze.Just name it and AutoAttend generates everythings you need to start tracking </p>
+                </div>
+                <div class = "flow-image">
+                    <img src ="{{url_for('static', filename = 'img/demo/flow-3.png')}}" alt = "flow image">
+                </div>
+            </div>
+             <div class = "flow-step">
+                <div class = "flow-content">
+                <div class = "step-badge"><u>Step-04</u></div>
+                <h3>Face-Id Attendace</h3>
+                <p>Use high speed computer vision to scan the entire room.Our AI indentifies every student from a single photo in milliseconds</p>
+                </div>
+                <div class = "flow-image">
+                    <img src ="{{url_for('static', filename = 'img/demo/f1.png')}}" alt = "flow image">
+                </div>
+            </div>
+             <div class = "flow-step">
+                <div class = "flow-content">
+                <div class = "step-badge"><u>Step-05</u></div>
+                <h3>Voice-Id Attendace</h3>
+                <p>Switch to voice mode for a futuristic roll-call.Student speaks Sequentially and our AI matches their unique voice signatures.</p>
+                </div>
+                <div class = "flow-image">
+                    <img src ="{{url_for('static', filename = 'img/demo/f2.png')}}" alt = "flow image">
+                </div>
+            </div>
+             <div class = "flow-step">
+                <div class = "flow-content">
+                <div class = "step-badge"><u>Step-06</u></div>
+                <h3>Actionable Records</h3>
+                <p>Review and manage historical logs. Confidence scores, download CSV reports, and track long-term attendance trends</p>
+                </div>
+                <div class = "flow-image">
+                    <img src ="{{url_for('static', filename = 'img/demo/flow-6.png')}}" alt = "flow image">
+                </div>
+            </div>
+
+            
+        </div>
+
+
+
+        </section>
+        <section id = "tech" class="Tech-Stack">
+
+        <!-- Section Heading -->
+        <div class="section-heading">
+            <p class="eyebrow">— Our Backend —</p>
+            <h1>Advanced Tech Stack</h1>
+        </div>
+
+
+        <!-- Tech Cards -->
+        <div class="tech-container">
+
+            <!-- Card 1 -->
+            <div class="tech-card">
+
+                <div class="icon-box">
+                    ⚡
+                </div>
+
+                <h2>Streamlit &amp; Flask</h2>
+
+                <p>
+                    Reactive frontend architecture paired
+                    with a robust Flask landing layer.
+                </p>
+
+                <span class="tech-tag">
+                    Platform
+                </span>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="tech-card">
+
+                <div class="icon-box">
+                    👁️
+                </div>
+
+                <h2>Face Registration</h2>
+
+                <p>
+                    Leveraging FaceRecognition and Dlib for
+                    high-fidelity facial biometrics.
+                </p>
+
+                <span class="tech-tag">
+                    Vision AI
+                </span>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="tech-card">
+
+                <div class="icon-box">
+                    🎙️
+                </div>
+
+                <h2>Voice Embeddings</h2>
+
+                <p>
+                    Utilizing Resemblyzer and Librosa for
+                    unique student voice signatures.
+                </p>
+
+                <span class="tech-tag">
+                    Audio AI
+                </span>
+
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="tech-card">
+
+                <div class="icon-box">
+                    ☁️
+                </div>
+
+                <h2>Supabase Cloud</h2>
+
+                <p>
+                    Real-time PostgreSQL infrastructure
+                    with secure auth and sync.
+                </p>
+
+                <span class="tech-tag">
+                    Storage
+                </span>
+
+            </div>
+
+        </div>
+
+        </section>
+
+
+        <section class="cta-section">
+
+        <div class="cta-content">
+
+        <h2>Ready to upgrade your classroom?</h2>
+
+        <p>
+            Join thousands of educators who have simplified their day with
+            AutoAttend. The smartest AI powered attendance system is just
+            one click away.
+        </p>
+
+        <a href="#" class="cta-button">
+            Start AI Attendance Now
+            <span>→</span>
+        </a>
+
+        </div>
+
+      
+
+        </section>
+        
+
+        <footer class="main-footer">
+
+        <div class="footer-grid">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}"
+                        alt="AutoAttend Logo">
+
+                    <div class="logo-text">AutoAttend</div>
+                </div>
+
+                <p>
+                    One snap Instant attendance.<br>
+                    AutoAttend uses facial recognition to mark your entire
+                    class in seconds — no rollno calls, no paperwork.
+                </p>
+
+            </div>
+
+
+            <!-- Products -->
+            <div class="footer-links">
+                <h4>Products</h4>
+
+                <ul>
+                    <li><a href="#features">AI Attendance</a></li>
+                    <li><a href="#features">Smart Roster</a></li>
+                    <li><a href="#tech">Tech Stack</a></li>
+                    <li><a href="#student-journey">Student Portal</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Experience -->
+            <div class="footer-links">
+                <h4>Experience</h4>
+
+                <ul>
+                    <li><a href="#journey">Teacher Journey</a></li>
+                    <li><a href="#student-journey">Student Journey</a></li>
+                    <li><a href="#features">Voice ID Roll Call</a></li>
+                    <li><a href="#features">Face ID Scan</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Company -->
+            <div class="footer-links">
+                <h4>Company</h4>
+
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#features">How It Works</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- Copyright / Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 AutoAttend AI. Built with ❤️ for educators everywhere.
+            </p>
+
+        </div>
+
+        </footer>  
+   </body>
+
+
+</html>

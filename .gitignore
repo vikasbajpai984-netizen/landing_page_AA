@@ -1,0 +1,23 @@
+# Specific files
+.env
+config.json
+secret.txt
+
+# Folders
+node_modules/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Build files
+dist/
+build/
+requirements.txt/
